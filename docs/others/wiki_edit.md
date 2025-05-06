@@ -1,38 +1,19 @@
-# Wiki Editing
+# Wiki Contents Editing
+Locally hosted webpage is automatically reloaded reacting to every change you make, which makes any changes very easy to see. See previous page on how to open up the webpage.
 
-## Python Installation
-MkDocs is a python package, so first of all you need to instal [Python and pip](https://www.python.org/downloads/).
+## Website Appearance
+To change website appearance you can edit `./mkdocs.yml` file. You can go through official wiki [Setup](https://squidfunk.github.io/mkdocs-material/setup/) page to find out all available tweaks.
 
-Confirm Python installation with the commands `python --version` and `pip --version`. If you see versions then everything is installed correctly
+![appearance](../assets/images/wiki_editing1.png)
 
-![python installation](../assets/images/wiki_edit1.png)
+## Navigation Structure
+First of all you need to define main file structure inside `./mkdocs.yml` file. This way you define which markdown corresponds to which page, in which order are they placed and with which name they are displayed.
 
-## MkDocs Installation
-Now that you have pip, you can download MkDocs with the command `pip install mkdocs`. Confirm succesful installation by running `mkdocs --version` command. Like previously if you see the message with version, you are good to go. For additional reference you can use the [official page](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs).
+![structure](../assets/images/wiki_editing2.png)
 
-## Material for MkDocs Installation
-We use Material Theme for MkDocs, you can install it buy running `pip install mkdocs-material` command. For additional reference you can use the [official page](https://squidfunk.github.io/mkdocs-material/getting-started/).
+## Page Editing
+Open the corresponding markdown `.md` file for the page you want to edit. Then you can write the text and use different command to create code blocks, annotations, links and other interractive stuff. 
 
-## Running the Weboage locally
-Now you can run the webpage with the command `mkdocs serve` and see it locally by going to [localhost:8000](http://localhost:8000/) page.
-
-!!! example
-    Make sure to be in main repo folder in terminal
-
-MkDocs includes live reloading server, if you see your changes, you can immediately see the results on the local page.
-
-For additional reference you can use the [official page](https://squidfunk.github.io/mkdocs-material/creating-your-site/).
-
-## Publishing
-Website is automatically rebuild and deployed via GitHub pages on every new commit to master or main branch. Then it is accessible via github.io link.
-
-Deployment logic is stored inside `./.github/workflows/ci.yml` file.
-
-## Website Changes
-If you want to change the look, you can go through [Setup](https://squidfunk.github.io/mkdocs-material/setup/) page of official wiki and play around with main mkdocs.yml file.
-
-## Text Editing
-See the main file structure inside mkdocs.yml file and edit any respective .md file.
-
-For all available syntax, go to [Reference](https://squidfunk.github.io/mkdocs-material/reference/) page. They you can see all functionality of Material for MkDocs.
+!!! tip
+    For all available syntax, go to official [Reference](https://squidfunk.github.io/mkdocs-material/reference/) page. They you can see all functionality of Material for MkDocs.
 

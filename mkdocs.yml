@@ -10,8 +10,9 @@ nav:
     - Name for Chapter 1: section2/chapter1.md
     - Name for Chapter 2: section2/chapter2.md
   - Others:
-    - Useful Links: others/links.md
+    - Wiki Hosting: others/wiki_hosting.md
     - Wiki Editing: others/wiki_edit.md
+    - Useful Links: others/links.md
 
 plugins:
   - search
@@ -45,6 +46,7 @@ theme:
     - navigation.sections
     - toc.follow
     - search.suggest
+    - content.code.copy
 
 markdown_extensions:
   - attr_list
