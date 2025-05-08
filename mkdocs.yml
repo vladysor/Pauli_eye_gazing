@@ -64,7 +64,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.details
   - pymdownx.superfences
-  - mdx_math
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
