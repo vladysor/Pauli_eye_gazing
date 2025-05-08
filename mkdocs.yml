@@ -1,0 +1,66 @@
+site_name: ShiegeChan Notes
+site_url: https://ShiegeChan.github.io/Pauli_eye_gazing
+site_author: Siegfried Krainer
+nav:
+  - Main Page: index.md
+  - Section I:
+    - Name for Chapter 1: section1/chapter1.md
+    - Name for Chapter 2: section1/chapter2.md
+  - Section II:
+    - Name for Chapter 1: section2/chapter1.md
+    - Name for Chapter 2: section2/chapter2.md
+  - Others:
+    - Wiki Hosting: others/wiki_hosting.md
+    - Wiki Editing: others/wiki_edit.md
+    - Useful Links: others/links.md
+
+plugins:
+  - search
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: fontawesome/solid/moon
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: fontawesome/solid/sun
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - toc.follow
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - def_list
+  - admonition
+  
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
