@@ -4,7 +4,7 @@ site_author: Siegfried Krainer
 nav:
   - Main Page: index.md
   - Section I:
-    - Name for Chapter 1: section1/chapter1.md
+    - My first Chapter, thanks2Vlad: section1/chapter1.md
     - Name for Chapter 2: section1/chapter2.md
   - Section II:
     - Name for Chapter 1: section2/chapter1.md
